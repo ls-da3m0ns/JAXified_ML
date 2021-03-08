@@ -8,4 +8,4 @@
 ### working on 
  * adding support for popular DeepLearning Architectures
  * currently working on 3 different depth versions ResNet
- * adding oneline GANs
+ * adding one line GANs
