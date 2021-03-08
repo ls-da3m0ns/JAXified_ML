@@ -15,8 +15,8 @@ class jaxKMeans():
         means = X[:self.n_clusters]
         idx = random.randint(self.key, (self.n_clusters,),0,n)
 
-        for i in range(idx.shape[0]):
-            means[i] = X[i]
+        #for i in range(idx.shape[0]):
+        #    means[i] = X[i]
 
         return means
 
@@ -38,12 +38,15 @@ class jaxKMeans():
 
         spilited = jnp.split(X[:,:n], jnp.unique(X[:,n],
                                                  return_index=True)[1][1:])
-
+        
+        temp = [0 for j in range(len(spilited))] #jnp.zeros((len(spilited),n))
         for i in range(len(spilited)):
-            temp = jnp.mean(spilited[i],axis=0)
-            means[i] = (means[i] + temp)/2
+            temp[i] = jnp.mean(spilited[i],axis=0)
+        
+        temp = jnp.array(temp)
+        newmean = (means + temp)/2
 
-        return means
+        return newmean
 
     def calculateMeans(self,X):
         means = self.initializeMeans(X)
@@ -90,3 +93,4 @@ class jaxKMeans():
     def getMeans(self):
         return self.means
 
+    
