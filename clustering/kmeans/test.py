@@ -7,7 +7,7 @@ jx = jaxKMeans(n_clusters=3)
 
 df=data['data']
 
-print(df)
+print(df.head())
 
 #means = jx.calculateMeans(df.values)
 #print(means)
