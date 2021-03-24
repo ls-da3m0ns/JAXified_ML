@@ -5,6 +5,8 @@
  * modified kmeans to output goodness score of point during prediction
  * allows running kmeans on CPU/GPU/TPU
  * ResNet architecture
+ * LeNet-5
+ 
 
 ### working on 
  * adding support for more popular DeepLearning Architectures

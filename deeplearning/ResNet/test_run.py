@@ -1,6 +1,9 @@
 import jax.numpy as jnp
 from jax import jit, grad, random
-import resnet 
+import numpy.random as npr
+from jax.experimental import optimizers
+from resnet import *
+
 
 bt_size = 128
 img_size = (48,48)
