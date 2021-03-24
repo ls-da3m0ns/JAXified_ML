@@ -34,7 +34,7 @@ if __name__ == "__main__":
   step_size = 0.1
   num_steps = 10
 
-  init_fun, predict_fun = ResNet50(num_classes)
+  init_fun, predict_fun = ResNet(num_classes)
   _, init_params = init_fun(rng_key, input_shape)
 
   def loss(params, batch):
