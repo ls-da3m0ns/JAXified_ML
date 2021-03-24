@@ -1,3 +1,4 @@
-jax
-numpy
-sklearn
+jax>=0.2.10
+numpy>=1.19.5
+sklearn>=0.23.2
+tensorflow_datasets
