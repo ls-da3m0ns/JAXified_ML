@@ -2,11 +2,11 @@
 ## Implementation of major ML Algorithms and techniques in JAX 
 
 ### current version includes
- * modified kmeans to output goodness score of point during prediction
- * allows running kmeans on CPU/GPU/TPU
- * ResNet architecture
+ * KMeans 
+    * allows running kmeans on CPU/GPU/TPU, modified kmeans to output goodness score  
+ * ResNet 
  * LeNet-5
- 
+
 
 ### working on 
  * adding support for more popular DeepLearning Architectures
