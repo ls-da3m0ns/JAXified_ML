@@ -3,3 +3,9 @@ conda_jax/*
 *pyc
 *.egg-info
 development/*
+compose
+read-configuration
+.devcontainer/*
+examples/*
+revamped/*
+test/*
