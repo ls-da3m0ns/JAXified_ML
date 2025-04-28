@@ -1,4 +1,4 @@
 jaxlib==0.6.0
 jax==0.6.0
 flax==0.10.6
-scikit-learn==1.2.0
+scikit-learn==1.5.1
